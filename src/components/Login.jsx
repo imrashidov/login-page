@@ -14,7 +14,7 @@ const Login = () => {
     <div className="background">
       <div className="login">
         <div className="w-full">
-          <div className="mx-28">
+          <div className="login-div">
             <h1 className="login-title">Login</h1>
             <p className="login-alt">Welcome back!</p>
           </div>
@@ -35,9 +35,9 @@ const Login = () => {
                   type={showPassword ? "text" : "password"}
                   className="login-input relative"
                 />
-                <button onClick={handleShowPassword} className="password-icon">
+                <i onClick={handleShowPassword} className="password-icon">
                   {showPassword ? <FaRegEyeSlash /> : <FaRegEye />}
-                </button>
+                </i>
               </div>
               <div className="login-buttons">
                 <button className="btn-login">Login</button>
