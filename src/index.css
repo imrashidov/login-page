@@ -27,7 +27,7 @@
   @apply flex gap-4 text-xl justify-center mt-20 font-semibold;
 }
 .login-container {
-  @apply flex items-center justify-center px-10;
+  @apply flex items-center justify-center px-10 relative;
 }
 .login-icon {
   @apply text-gray-500 mr-2 text-lg;
@@ -40,4 +40,7 @@
 }
 .register-active {
   @apply flex justify-center items-center;
+}
+.password-icon {
+  @apply text-gray-500 text-2xl absolute flex items-center justify-center right-24 hover:bg-gray-800 cursor-pointer w-8 h-8 rounded-full;
 }
