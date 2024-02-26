@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-[url(../public/images/bg.png)];
+.background {
+  @apply bg-[url(../public/images/bg.png)] animate-[bgMoveBot_30s_linear_infinite]  fixed w-screen h-screen;
+}
+.login {
+  @apply bg-black text-white w-1/3 h-screen flex justify-center items-center p-10;
+}
+.login-active {
+  @apply rounded-xl shadow-lg shadow-violet-500 border-violet-500 border-2 w-2/5 h-2/5;
+}
+.login-title {
+  @apply text-4xl font-extrabold;
+}
+.login-alt {
+  @apply mb-16 text-gray-500 font-medium;
+}
+.login-form {
+  @apply flex flex-col gap-5;
+}
+.login-input {
+  @apply py-2 bg-black border-b-2 border-violet-500 outline-none w-3/4;
+}
+.login-buttons {
+  @apply flex gap-4 text-xl justify-center mt-20 font-semibold;
+}
+.login-container {
+  @apply flex items-center justify-center px-10;
+}
+.login-icon {
+  @apply text-gray-500 mr-2 text-lg;
+}
+.btn-login {
+  @apply border-2 px-5 py-3 border-violet-500 rounded-xl;
+}
+.btn-register {
+  @apply border-2 px-5 py-3 rounded-xl text-black bg-white hover:bg-black hover:text-white hover:border-violet-500 transition-all duration-300;
+}
+.register-active {
+  @apply flex justify-center items-center;
 }

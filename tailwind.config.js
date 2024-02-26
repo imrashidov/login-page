@@ -2,9 +2,20 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      sans: ["Nunito", "sans-serif"],
+    },
     extend: {
-      animation: {
-        "background-move": "translate 0 300px",
+      keyframes: {
+        bgMoveBot: {
+          "0%": { backgroundPosition: "0% 100%" },
+        },
+        bgMoveTop: {
+          "0%": { backgroundPosition: "0% 0%" },
+        },
+      },
+      colors: {
+        violetPrimary: "#8A368E",
       },
     },
   },
